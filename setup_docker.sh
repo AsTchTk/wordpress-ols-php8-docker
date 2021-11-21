@@ -3,12 +3,12 @@ DEFAULT_VH_ROOT='/var/www/vhosts'
 DOMAIN=$URL
 
 echo "listener HTTP {
-  address                 *:80
+  address                 10.0.192.16:80
   secure                  0
 }
 
 listener HTTPS {
-  address                 *:443
+  address                 10.0.192.16:443
   secure                  1
   keyFile                 /usr/local/lsws/admin/conf/webadmin.key
   certFile                /usr/local/lsws/admin/conf/webadmin.crt
